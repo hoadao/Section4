@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonaci bai 3 va bai 5</title>
+</head>
+<body>
+    <script>
+        var soCu=1;
+        var soMoi=1;
+        var tong=2;
+        document.write(soCu+"</br>"+soMoi+"</br>");
+        for(var i=0;i<20;i++){
+            var t=soMoi;
+            soMoi=soCu+soMoi;
+            soCu=t;
+            tong+=soMoi;
+            document.write(soMoi+"</br>");
+        }
+        document.write("Tong 20 so dau tien la: "+tong);
+
+    </script>
+</body>
+</html>

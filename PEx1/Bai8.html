@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đoán xem</title>
+</head>
+<body>
+    <img src="cho.jpeg" id="choi" onclick="doanXem()" width="255" height="197"/>
+    <script>
+        function doanXem() {
+            var khoang=parseInt(prompt("Nhap vao khoang muon doan: "));
+            var soCanTim=Math.floor(Math.random()*khoang);
+            document.write(soCanTim);
+            var soLanDoan=0;
+            while(soLanDoan<3){
+                var so=parseInt(prompt("So ban muon doan: "));
+                if(so>soCanTim){
+                    document.write("Lon hon!"+"</br>");
+                    soLanDoan+=1;
+                }
+                else if(so<soCanTim){
+                    document.write("Be hon!"+"</br>");
+                    soLanDoan+=1;
+                }
+                else{
+                    document.write("Chuc mung!");
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
