@@ -2,9 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>20 so nguyen to</title>
 </head>
 <body>
-
+    <script>
+        function ktSnt(n) {
+            if(n==2||n==3){
+                return true;
+            }
+            var m = parseInt(Math.sqrt(n));
+            for(var i=2;i<=m;i++){
+                if(n%i==0){
+                    return false;
+                }
+            }
+            return true;
+        }
+        var i=0;
+        var snt=2;
+        while(i<20){
+            if(ktSnt(snt)==true) {
+                document.write(snt + "</br>");
+                snt += 1;
+                i+=1;
+            }
+            else{
+                snt+=1;
+            }
+        }
+    </script>
 </body>
 </html>
