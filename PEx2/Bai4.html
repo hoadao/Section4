@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hinh chu nhat</title>
+</head>
+<body>
+    <script>
+        var dai=parseInt(prompt("Chieu dai: "));
+        var rong=parseInt(prompt("Chieu rong: "));
+        for(var i=1;i<=dai;i++){
+            if(i==1||i==dai) {
+                for (var j = 0; j < rong; j++) {
+                    document.write("*");
+                }
+            }
+            else{
+                for(var j=1;j<=rong;j++){
+                    if(j==1||j==rong){
+                        document.write("*");
+                    }
+                    else{
+                        document.write("&nbsp ");
+                    }
+                }
+            }
+            document.write("</br>");
+        }
+    </script>
+</body>
+</html>

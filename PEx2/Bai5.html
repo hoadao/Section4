@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lai suat ngan hang</title>
+</head>
+<body>
+    <script>
+        var tienVay=parseInt(prompt("Nhap so tien vay: "));
+        var soThang=parseInt(prompt("Nhap so thang vay: "));
+        var laiSuat=parseFloat(prompt("Nhap lai suat cho vay (%): "));
+        for(var i=0;i<soThang;i++){
+            tienVay+=(laiSuat)*tienVay/100;
+        }
+        document.write("Sau "+soThang+" thang, ban phai tra so tien la: "+tienVay);
+    </script>
+</body>
+</html>

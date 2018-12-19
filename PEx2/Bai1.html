@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fibonaci</title>
+</head>
+<body>
+    <script>
+        var soMoi=1,soCu=1;
+        document.write(soCu+"</br>"+soMoi+"</br>");
+        var soLuong=parseInt(prompt("Nhap vao so luong so fibonaci muon in: "));
+        for(var i=2;i<soLuong;i++){
+            var t=soMoi;
+            soMoi+=soCu;
+            soCu=t;
+            document.write(soMoi+"</br>");
+        }
+    </script>
+</body>
+</html>
